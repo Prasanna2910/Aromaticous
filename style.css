@@ -1,0 +1,107 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  background-color: black;
+}
+body {
+  color: white;
+}
+nav {
+}
+.AromaticousTitle {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: absolute;
+  left: 45%;
+}
+#logoMain {
+  width: 30px;
+  height: 28px;
+  position: absolute;
+  left: 40%;
+  margin: 5px 2px;
+}
+
+.search {
+  background-color: #ffbd07;
+  border-radius: 5px;
+  width: 6%;
+  height: 30px;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  cursor: pointer;
+  position: absolute;
+  right: 18%;
+  top: 16%;
+}
+#chef {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 58%;
+}
+.HomeBtn {
+  background-color: #ffbd07;
+  border-radius: 5px;
+  width: 6%;
+  height: 25px;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 5px 2px;
+  cursor: pointer;
+  position: absolute;
+  right: 9%;
+}
+.abtBtn {
+    background-color: #ffbd07;
+    border-radius: 5px;
+    width: 6%;
+    height: 25px;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 5px 2px;
+    cursor: pointer;
+    position: absolute;
+    left: 9%;
+  }
+.line1 {
+  color: white;
+  position: absolute;
+  top: 9%;
+  left: 5%;
+  width: 90%;
+}
+#SearchBar {
+  color: white;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  height: 30px;
+  width: 48%;
+  position: absolute;
+  top: 16%;
+  left: 25%;
+}
+
+#randomDishDiv {
+  border: 1px solid white;
+  width: 20%;
+  height: 50%;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+#insideImg {
+  /* border:1px solid rgb(255, 255, 255); */
+  position: absolute;
+  top: 5%;
+  left: 13%;
+}
