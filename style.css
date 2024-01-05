@@ -1,47 +1,55 @@
 * {
   padding: 0px;
-  margin: 0px;
-  background-color: black;
+  /* margin: 0px; */
 }
-body {
+body,
+#container-body {
   color: white;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    108deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(53, 2, 67, 1) 27%,
+    rgba(53, 2, 67, 1) 70%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
-nav {
-}
+/* nav {
+} */
 .AromaticousTitle {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   position: absolute;
-  left: 45%;
-}
-#logoMain {
-  width: 30px;
-  height: 28px;
-  position: absolute;
-  left: 40%;
-  margin: 5px 2px;
-}
-
-.search {
-  background-color: #ffbd07;
-  border-radius: 5px;
-  width: 6%;
-  height: 30px;
-  border: none;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  font-size: 12px;
-  cursor: pointer;
-  position: absolute;
-  right: 18%;
-  top: 16%;
+  top: -4%;
+  left: 43%;
 }
 #chef {
   width: 40px;
   height: 40px;
   position: absolute;
-  left: 58%;
+  top: 0%;
+  left: 56%;
+}
+.YourTongue {
+  position: absolute;
+  top: 5%;
+  font-size: 12px;
+  left: 43%;
+}
+.abtBtn {
+  background-color: #ffbd07;
+  border-radius: 5px;
+  width: 6%;
+  height: 25px;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 5px 2px;
+  cursor: pointer;
+  position: absolute;
+  left: 9%;
 }
 .HomeBtn {
   background-color: #ffbd07;
@@ -58,45 +66,62 @@ nav {
   position: absolute;
   right: 9%;
 }
-.abtBtn {
-    background-color: #ffbd07;
-    border-radius: 5px;
-    width: 6%;
-    height: 25px;
-    border: none;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    font-size: 12px;
-    margin: 5px 2px;
-    cursor: pointer;
-    position: absolute;
-    left: 9%;
-  }
 .line1 {
   color: white;
   position: absolute;
-  top: 9%;
+  top: 10%;
   left: 5%;
   width: 90%;
 }
+.search {
+  background-color: #ffbd07;
+  border-radius: 5px;
+  width: 6%;
+  height: 30px;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  cursor: pointer;
+  position: absolute;
+  right: 16%;
+  top: 54%;
+}
+
+
+.LanguageDiv {
+  font-size: 12px;
+  text-align: center;
+  position: absolute;
+  right: 6%;
+  top: 14%;
+}
 #SearchBar {
-  color: white;
+  color: black;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 5px;
   height: 30px;
   width: 48%;
   position: absolute;
-  top: 16%;
+  top: 54%;
   left: 25%;
+}
+.RandomTitle {
+  position: absolute;
+  top: 70%;
+  left: 36%;
 }
 
 #randomDishDiv {
   border: 1px solid white;
   width: 20%;
-  height: 50%;
+  height: 52%;
   position: absolute;
-  top: 30%;
+  top: 90%;
   left: 40%;
 }
 #insideImg {
@@ -104,4 +129,100 @@ nav {
   position: absolute;
   top: 5%;
   left: 13%;
+}
+#container {
+  position: absolute;
+  text-align: center;
+  font-size: 13px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  top: 170%;
+  left: 1%;
+  display: grid;
+  row-gap: 40px;
+  column-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.logoMain {
+  width: 50%;
+}
+dialog {
+  /* border: 1px solid cyan; */
+  border-radius: 10px;
+  border: none;
+  width: 30%;
+  height: 70%;
+  text-align: center;
+  background-color: bisque;
+  font-weight: bold;
+  overflow: hidden;
+  list-style: none;
+  /* border: 1px solid white; */
+  position: absolute;
+  left: 60%;
+  top: 20%;
+  box-shadow: 3px 3px 3px 3px (rgb(160, 160, 122));
+}
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  body,
+  #container-body {
+    color: white;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      108deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(53, 2, 67, 1) 27%,
+      rgba(53, 2, 67, 1) 70%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+  .AromaticousTitle {
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+      sans-serif; */
+    position: absolute;
+    top: -5%;
+    left: 30%;
+    font-size: 20px;
+  }
+  #chef {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0%;
+    left: 67%;
+  }
+  .YourTongue {
+    position: absolute;
+    top: 5%;
+    font-size: 12px;
+    left: 26%;
+  }
+  .abtBtn {
+    background-color: #ffbd07;
+    border-radius: 5px;
+    width: 10%;
+    height: 15px;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 9px;
+    font-weight: bolder;
+    margin: 5px 2px;
+    cursor: pointer;
+    position: absolute;
+    left: 9%;
+  }
+  .HomeBtn {
+    display: none;
+  }
+  .line1 {
+    color: white;
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    width: 90%;
+  }
 }
