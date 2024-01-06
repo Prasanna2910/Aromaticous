@@ -156,7 +156,7 @@ dialog {
   list-style: none;
   position: absolute;
   left: 60%;
-  top: 1%;
+  top: 120%;
   box-shadow: 3px 3px 3px 3px (rgb(160, 160, 122));
 }
 #insideImg {
