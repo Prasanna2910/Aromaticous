@@ -56,15 +56,18 @@ async function filterByCategory(inputCategory) {
     let data = response.data.meals;
     let container = '';
     gettingName.innerHTML = '';
+
     data.forEach(function (element, index) {
       container += `<div class="ingredient">
-        <img src="${element.strMealThumb}" alt="logo image" class="logoMain" />
-        <h3>"${element.strMeal}"</h3>
-      </div>`;
+      <img src="${element.strMealThumb}" alt="logo image" class="logoMain" />
+      <h3>${element.strMeal}</h3>
+    </div>`;
+      console.log(data);
+      gettingName.innerHTML = container;
     });
-    gettingName.innerHTML += container;
-    console.log(data);
   } catch (err) {
+    container = `<h3>No items found. Sorry</h3>`;
+    gettingName.innerHTML = container;
     console.log(err.message);
   }
 }
