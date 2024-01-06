@@ -40,8 +40,8 @@ getRandomFood();
 let randomImg = document.getElementById('randomDishDiv');
 
 function display(dataOfItem) {
-  randomImg.innerHTML = `<img src="${dataOfItem.strMealThumb}" alt="" id="insideImg" style="width: 160px" />
-    <p style="color: white; width: 75%; position: absolute; top: 70%; left: 13%; text-align:center;" id="insideTEXT">${dataOfItem.strMeal}</p>`;
+  randomImg.innerHTML = `<img src="${dataOfItem.strMealThumb}" alt="" id="insideImg";/>
+    <p id="insideTEXT">${dataOfItem.strMeal}</p>`;
 }
 
 let gettingName = document.querySelector('#container');
